@@ -25,12 +25,17 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        medical: {
-          50: "#F0FDF9",
-          100: "#CCFBF1",
-          500: "#4FD1C5",
-          600: "#319795",
-          700: "#2C7A7B",
+        mental: {
+          50: "hsl(54, 91%, 95%)",
+          100: "hsl(52, 91%, 88%)",
+          200: "hsl(50, 89%, 85%)",
+          300: "hsl(48, 87%, 75%)",
+          400: "hsl(46, 85%, 65%)",
+          500: "hsl(45, 93%, 47%)",
+          600: "hsl(43, 89%, 38%)",
+          700: "hsl(41, 85%, 28%)",
+          800: "hsl(39, 80%, 18%)",
+          900: "hsl(37, 75%, 12%)",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

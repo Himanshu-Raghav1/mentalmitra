@@ -19,9 +19,9 @@ export default function LoginForm() {
     if (email && password) {
       toast({
         title: "Login successful",
-        description: "Welcome back!",
+        description: "Welcome to MentalMitra!",
       });
-      navigate("/symptoms");
+      navigate("/userinfo");
     } else {
       toast({
         title: "Error",
@@ -34,7 +34,7 @@ export default function LoginForm() {
   return (
     <div className="w-full min-h-screen flex flex-col lg:flex-row">
       {/* Left side - Features */}
-      <div className="w-full lg:w-1/2 bg-gradient-to-br from-medical-50 to-medical-100 p-8 lg:p-16 flex flex-col justify-center relative overflow-hidden">
+      <div className="w-full lg:w-1/2 bg-gradient-to-br from-mental-50 to-mental-100 p-8 lg:p-16 flex flex-col justify-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
@@ -43,39 +43,39 @@ export default function LoginForm() {
           />
         </div>
         <div className="max-w-xl mx-auto relative z-10">
-          <h1 className="text-4xl font-bold text-medical-700 mb-4">AI-Powered Healthcare</h1>
-          <p className="text-medical-600 mb-12">
-            Advanced disease prediction and treatment recommendations powered by blockchain technology
+          <h1 className="text-4xl font-bold text-mental-700 mb-4">🧠 MentalMitra</h1>
+          <p className="text-mental-600 mb-12">
+            Your AI-powered mental health companion for digital wellness and mindful living
           </p>
 
           <div className="space-y-8">
             <div className="flex items-start space-x-4 bg-white/80 p-4 rounded-lg backdrop-blur-sm">
-              <div className="p-2 bg-medical-100 rounded-lg">
-                <Brain className="h-6 w-6 text-medical-500" />
+              <div className="p-2 bg-mental-100 rounded-lg">
+                <Brain className="h-6 w-6 text-mental-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-medical-700 mb-1">AI Diagnosis</h3>
-                <p className="text-medical-600">Advanced symptom analysis and disease prediction</p>
+                <h3 className="font-semibold text-mental-700 mb-1">Digital Wellness</h3>
+                <p className="text-mental-600">Analyze your screen time and social media habits</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4 bg-white/80 p-4 rounded-lg backdrop-blur-sm">
-              <div className="p-2 bg-medical-100 rounded-lg">
-                <Shield className="h-6 w-6 text-medical-500" />
+              <div className="p-2 bg-mental-100 rounded-lg">
+                <Shield className="h-6 w-6 text-mental-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-medical-700 mb-1">Secure Blockchain</h3>
-                <p className="text-medical-600">Your medical data is encrypted and secure</p>
+                <h3 className="font-semibold text-mental-700 mb-1">Privacy First</h3>
+                <p className="text-mental-600">Your mental health data stays private and secure</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4 bg-white/80 p-4 rounded-lg backdrop-blur-sm">
-              <div className="p-2 bg-medical-100 rounded-lg">
-                <ActivitySquare className="h-6 w-6 text-medical-500" />
+              <div className="p-2 bg-mental-100 rounded-lg">
+                <ActivitySquare className="h-6 w-6 text-mental-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-medical-700 mb-1">Treatment Tracking</h3>
-                <p className="text-medical-600">Monitor your progress and medical history</p>
+                <h3 className="font-semibold text-mental-700 mb-1">Personalized Insights</h3>
+                <p className="text-mental-600">Get tailored recommendations for better mental health</p>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function LoginForm() {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-medical-500 hover:bg-medical-600 text-white">
+            <Button type="submit" className="w-full bg-mental-500 hover:bg-mental-600 text-white">
               <LogIn className="mr-2 h-4 w-4" /> Login
             </Button>
           </form>
@@ -134,7 +134,7 @@ export default function LoginForm() {
           <div className="text-center">
             <button
               onClick={() => navigate("/signup")}
-              className="text-medical-600 hover:text-medical-700 text-sm transition-colors"
+              className="text-mental-600 hover:text-mental-700 text-sm transition-colors"
             >
               Don't have an account? Sign up
             </button>
